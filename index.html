@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin: 10px 0;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                height: 250px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>DEMO VIDEO OF OUR PROTOTYPE</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/5NhqDuoI8FI" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>
